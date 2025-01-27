@@ -17,6 +17,7 @@ const Banner = () => {
         backgroundRepeat: "no-repeat", // Prevent the image from repeating
         backgroundSize: "contain", // Ensure the background image is fully visible
       }}
+      
     >
       <Grid container alignItems="center" spacing={2}>
         {/* Left Content */}
