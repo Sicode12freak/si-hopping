@@ -13,13 +13,16 @@ import logo from '../Assets/Images/logo.png';
 import { MenuItem } from "@mui/material";
 import Cart from "../Pages/Cart";
 import Order from "../Pages/Order";
+import OrderLists from "./OrderLists";
 
 const pages = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
   { title: "Shop", path: "/shop" },
   { title: "Cart", path: "/cart" },
-  { title: "Order", path: "/order" }
+  { title: "Order", path: "/order" },
+  { title: "OrderLists", path: "/orderlist" }
+
 
 ];
 

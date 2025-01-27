@@ -5,6 +5,7 @@ import AboutContent from "../Components/AboutContent";
 import Banner from "../Components/Banner";
 import Cart from "./Cart";
 import Order from "./Order";
+import OrderLists from "../Components/OrderLists";
 
 export default function Home() {
   return (

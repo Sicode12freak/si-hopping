@@ -1,4 +1,3 @@
-// Order.js
 import React, { useState, useEffect } from 'react';
 import {
   Box,
@@ -40,8 +39,21 @@ export default function Order() {
   };
 
   const handleSubmitOrder = () => {
-    // Here, you could integrate with an API to submit the order
-    localStorage.removeItem('cart'); // Clear cart after order
+    // Create an order object with cart data, total, and shipping details
+    const order = {
+      cart,
+      total: calculateTotal(),
+      shippingDetails,
+    };
+
+    // Save the order to localStorage
+    const savedOrders = JSON.parse(localStorage.getItem('orders')) || [];
+    savedOrders.push(order);
+    localStorage.setItem('orders', JSON.stringify(savedOrders));
+
+    // Clear the cart from localStorage
+    localStorage.removeItem('cart');
+
     alert('Order submitted successfully!');
     navigate('/'); // Redirect to the home page after order submission
   };
@@ -102,9 +114,8 @@ export default function Order() {
                 <MenuItem value="Canada">Canada</MenuItem>
                 <MenuItem value="Mexico">Mexico</MenuItem>
                 <MenuItem value="India">India</MenuItem>
-                <MenuItem value="japan">Japan</MenuItem>
+                <MenuItem value="Japan">Japan</MenuItem>
                 <MenuItem value="Russia">Russia</MenuItem>
-            
               </Select>
             </FormControl>
           </Paper>

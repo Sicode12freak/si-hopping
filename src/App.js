@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import { Box } from "@mui/material";
 import Cart from "./Pages/Cart";
 import Order from "./Pages/Order";
+import OrderLists from "./Components/OrderLists";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/*" element={<Error />} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/order" element={<Order/>} />
+            <Route path="/orderlist" element={<OrderLists/>} />
           </Routes>
         </Box>
         <Footer />
