@@ -1,6 +1,18 @@
 // Order.js
 import React, { useState, useEffect } from 'react';
-import { Box, Typography, TextField, Button, Grid, Paper, Divider, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import {
+  Box,
+  Typography,
+  TextField,
+  Button,
+  Grid,
+  Paper,
+  Divider,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 export default function Order() {
@@ -89,6 +101,10 @@ export default function Order() {
                 <MenuItem value="USA">USA</MenuItem>
                 <MenuItem value="Canada">Canada</MenuItem>
                 <MenuItem value="Mexico">Mexico</MenuItem>
+                <MenuItem value="India">India</MenuItem>
+                <MenuItem value="japan">Japan</MenuItem>
+                <MenuItem value="Russia">Russia</MenuItem>
+            
               </Select>
             </FormControl>
           </Paper>
