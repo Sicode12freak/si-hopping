@@ -18,6 +18,7 @@ const Banner = () => {
         backgroundSize: "contain", // Ensure the background image is fully visible
       }}
       //uyuitgli
+      //suck it niga
     >
       <Grid container alignItems="center" spacing={2}>
         {/* Left Content */}
