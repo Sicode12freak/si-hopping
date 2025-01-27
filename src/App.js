@@ -10,6 +10,7 @@ import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import { Box } from "@mui/material";
 import Cart from "./Pages/Cart";
+import Order from "./Pages/Order";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route path="/*" element={<Error />} />
             <Route path="/cart" element={<Cart/>} />
+            <Route path="/order" element={<Order/>} />
           </Routes>
         </Box>
         <Footer />

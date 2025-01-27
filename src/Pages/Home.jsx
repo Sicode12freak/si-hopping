@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import AboutContent from "../Components/AboutContent";
 import Banner from "../Components/Banner";
 import Cart from "./Cart";
+import Order from "./Order";
 
 export default function Home() {
   return (
