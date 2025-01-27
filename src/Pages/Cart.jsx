@@ -6,7 +6,7 @@ export default function Cart() {
 
   return (
     <div>
-      <h1>Cart</h1>
+      <h1>Cart banri Angdi ge</h1>
       <div>
         
       </div>
